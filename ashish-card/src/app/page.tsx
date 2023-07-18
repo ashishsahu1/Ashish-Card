@@ -4,6 +4,9 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import { ToastContainer, toast } from 'react-toastify';
 import '../../node_modules/react-toastify/dist/ReactToastify.min.css';
+import { CiLinkedin,CiTwitter } from 'react-icons/ci';
+import { BsGithub } from 'react-icons/bs';
+
 
 export default function Home() {
 
@@ -33,6 +36,7 @@ export default function Home() {
         <div className="card">
 
           <div className="front side">
+            
             <h1 className="logo">Ashish Sahu</h1>
           </div>
 
@@ -40,14 +44,19 @@ export default function Home() {
             <h3 className="name">Ashish Sahu</h3>
             <div>Software developer</div>
             <div className="info">
-              <div className="icons">
-                <div className="linkedin"></div>
-              </div>
+              
               <p onClick={emailCopy}><span className="property">Email: </span>its.ashish.sahu@gmail.com</p>
               <p onClick={phoneCopy}><span className="property">Phone: </span>82102029272</p>
               <p onClick={websiteCopy}><span className="property">Website: </span>https://ashishsahu1.github.io/</p>
               <p onClick={addressCopy}><span className="property">Address: </span>Road no 12b, Panchsheel Path, Jagannathpur, Gamaharia, Jamshedpur, Jharkhand 832108</p>
+              <div className="icons">
+                <div className="linkedin"><BsGithub/></div>
+                <div className="linkedin"><CiLinkedin/></div>
+                <div className="linkedin"><CiTwitter/></div>
+              </div>
+            
             </div>
+            
           </div>
 
         </div>

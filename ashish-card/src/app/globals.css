@@ -105,6 +105,8 @@ p {
   color: #fff;
 }
 
+
+
 /* Make semi-responsive */
 @media (max-width:700px) {
   .card {
@@ -114,4 +116,16 @@ p {
   .container:hover .card {
     transform: scale(.5) rotateY(-180deg) translateZ(1px);
   }
+}
+
+.info .icons{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.info .icons *{
+  width: 2rem;
+  height: auto;
+  margin-right: 1.5rem;
 }
