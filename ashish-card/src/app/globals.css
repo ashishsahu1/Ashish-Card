@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #212b38;
+  background: #171717;
   overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
-
+  font-weight: 400;
   /* Center it */
   position: absolute;
   top: 50%;
@@ -36,7 +36,7 @@ p:hover{
   width: 700px;
   height: 400px;
   background: rgb(20, 20, 20);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.141), 0 3px 6px rgba(0, 0, 0, 0.23);
 
   /* Card flipping effects */
   transform-style: preserve-3d;
@@ -67,27 +67,29 @@ p:hover{
 }
 
 .logo {
-  outline: 1px solid #19F6E8;
+  outline: 1px solid #223DFE;
   display: inline-block;
   padding: 15px 40px;
 
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
-  font-weight: normal;
+  font-weight: bolder;
   line-height: 32px;
   letter-spacing: 8px;
 }
 
 /* Back styling */
 .back {
-  background: #15CCC0;
+  background: #223DFE;
   padding: 30px;
 }
 
 .name {
-  color: #3B3B3B;
+  /* color: #3B3B3B; */
+  font-weight: 700;
   margin-bottom: 0;
+  font-size: x-large;
 }
 
 p {
@@ -98,11 +100,14 @@ p {
   position: absolute;
   bottom: 30px;
   left: 30px;
-  color: #3b3b3b;
+  /* color: #3b3b3b; */
+  margin-top: 2rem;
+  
 }
 
 .property {
   color: #fff;
+  font-weight: 700;
 }
 
 
@@ -125,7 +130,21 @@ p {
 }
 
 .info .icons *{
-  width: 2rem;
+  width: 1.5rem;
   height: auto;
   margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.img{
+  position: absolute;
+  opacity: 0.3;
+  mix-blend-mode: soft-light;
+}
+
+.prompt{
+  font-size: 0.5rem;
+  letter-spacing: 0.03;
+  text-decoration: none;
+  color:rgb(156, 167, 253)
 }
